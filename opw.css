@@ -1,0 +1,115 @@
+*{ 	box-sizing: border-box; }
+body { font-family: Courier New, sans-serif; 
+       margin: 0; padding: 0;
+    }
+.hero { 
+    background-image: url(images/GDC_group.jpg); 
+    min-height: 100vh;  
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+	padding: 0;
+}
+.GDChero { 
+    background-image: url(images/GDC_coop.jpg); 
+    min-height: 100vh;
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+ }
+.eaglehero { 
+    background-image: url(images/eagle_crop.jpg); 
+    min-height: 100vh; 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+ }
+ .varhero { 
+    background-image: url(images/eagle_crop.jpg); 
+    min-height: 100vh; 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+ }
+ .sootlhero { 
+    background-image: url(images/eagle_crop.jpg); 
+    min-height: 100vh; 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+ }
+ .physhhero { 
+    background-image: url(images/eagle_crop.jpg); 
+    min-height: 100vh; 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+ }
+ .contacthero { 
+    background-image: url(images/penguin.jpg); 
+    min-height: 100vh;  
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+ }
+ 
+nav { 
+    z-index:9999;
+    position: fixed;
+	  top: 0;
+	  left: 0;
+	  padding: .5em;
+	  height: 55px;
+	  background:rgba(102, 113, 255, .70);
+	  width: 100%;
+	  font-size: 120%;
+	  font-weight: bold;
+		text-shadow: 3px 3px 3px #000000;
+	  min-width: 900px;
+}
+
+nav ul { list-style-type: none; 
+         margin: 5px; }
+nav ul li { display: inline; padding-left: 2em; padding-right: 2em; }
+nav a { text-decoration:none; }
+nav a:link { color: rgb(204, 199, 255); }
+nav a:visited { color: rgb(204, 199, 255); }
+nav a:hover { color: rgb(102, 159, 255); }
+h1 {  
+      height: 200px; 
+      padding-top: .38em; 
+      padding-bottom: .75em;
+	   text-align: center;
+      background:rgba(153, 110, 255, 0.80);
+      color: rgb(204, 199, 255);
+      font-family: 'Brush Script MT', cursive;
+		text-shadow: 5px 5px 5px #000000;
+		font-size: 6em;
+}
+.space {height: 20vh; }
+#about, #scout, #variance, #sootl, #physh, #contact { 
+  background-color: rgb(153, 110, 255);
+	width: 100%;
+	padding-left: 6em;
+	padding-right: 6em;
+	padding-top: 30px;
+	padding-bottom: 2em; 
+}
+footer {  background:rgba(102, 113, 255, 0.90);
+          width: 100%;
+          font-size: 90%;
+          text-align: center;	
+          color: rgb(204, 199, 255);
+		      position: fixed;
+          bottom: 0;
+}
+footer a {  text-decoration: none; 
+            color: rgb(204, 199, 255); 
+            }
