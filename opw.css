@@ -1,10 +1,10 @@
 *{ 	box-sizing: border-box; }
 body { font-family: Courier New, sans-serif; 
-       margin: 0; padding: 0;
+       margin: 0; padding: 0; font-size: larger;
     }
 .hero { 
     background-image: url(images/GDC_group.jpg); 
-    min-height: 100vh;  
+    min-height: 80vh;  
     background-attachment: fixed; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -13,7 +13,7 @@ body { font-family: Courier New, sans-serif;
 }
 .GDChero { 
     background-image: url(images/GDC_coop.jpg); 
-    min-height: 100vh;
+    min-height: 80vh;
     background-attachment: fixed; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -21,39 +21,39 @@ body { font-family: Courier New, sans-serif;
  }
 .eaglehero { 
     background-image: url(images/eagle_crop.jpg); 
-    min-height: 100vh; 
+    min-height: 80vh; 
     background-attachment: fixed; 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
  }
  .varhero { 
-    background-image: url(images/eagle_crop.jpg); 
-    min-height: 100vh; 
+    background-image: url(images/variance.jpg); 
+    min-height: 80vh; 
     background-attachment: fixed; 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
  }
  .sootlhero { 
-    background-image: url(images/eagle_crop.jpg); 
-    min-height: 100vh; 
+    background-image: url(images/sootl_ss.jpg); 
+    min-height: 80vh; 
     background-attachment: fixed; 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
  }
  .physhhero { 
-    background-image: url(images/eagle_crop.jpg); 
-    min-height: 100vh; 
+    background-image: url(images/physh.jpg); 
+    min-height: 80vh; 
     background-attachment: fixed; 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
  }
- .contacthero { 
-    background-image: url(images/penguin.jpg); 
-    min-height: 100vh;  
+ .penguinhero { 
+    background-image: url(images/penguin_menu.jpg); 
+    min-height: 60vh;  
     background-attachment: fixed; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -61,8 +61,8 @@ body { font-family: Courier New, sans-serif;
  }
  
 nav { 
-    z-index:9999;
-    position: fixed;
+     z-index:9999;
+     position: fixed;
 	  top: 0;
 	  left: 0;
 	  padding: .5em;
@@ -71,12 +71,14 @@ nav {
 	  width: 100%;
 	  font-size: 120%;
 	  font-weight: bold;
-		text-shadow: 3px 3px 3px #000000;
-	  min-width: 900px;
+	  text-shadow: 3px 3px 3px #000000;
+	  min-width: 1400px;
 }
 
-nav ul { list-style-type: none; 
-         margin: 5px; }
+nav ul { 
+   list-style-type: none; 
+   margin: 5px; 
+}
 nav ul li { display: inline; padding-left: 2em; padding-right: 2em; }
 nav a { text-decoration:none; }
 nav a:link { color: rgb(204, 199, 255); }
@@ -84,7 +86,7 @@ nav a:visited { color: rgb(204, 199, 255); }
 nav a:hover { color: rgb(102, 159, 255); }
 h1 {  
       height: 200px; 
-      padding-top: .38em; 
+      padding-top: .21em; 
       padding-bottom: .75em;
 	   text-align: center;
       background:rgba(153, 110, 255, 0.80);
@@ -94,7 +96,7 @@ h1 {
 		font-size: 6em;
 }
 .space {height: 20vh; }
-#about, #scout, #variance, #sootl, #physh, #contact { 
+#about, #scout, #variance, #sootl, #physh, #penguin, #contact { 
   background-color: rgb(153, 110, 255);
 	width: 100%;
 	padding-left: 6em;
@@ -113,3 +115,10 @@ footer {  background:rgba(102, 113, 255, 0.90);
 footer a {  text-decoration: none; 
             color: rgb(204, 199, 255); 
             }
+@media (max-width: 1400px) {
+   nav{
+      height: 80px;
+      font-size: 150%;
+      min-width: 1000px;
+   }
+}
