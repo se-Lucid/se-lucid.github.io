@@ -4,15 +4,17 @@ body { font-family: Courier New, sans-serif;
     }
 .hero { 
     background-image: url(images/GDC_group.jpg); 
-    min-height: 80vh;  
+    min-width: fit-content;
+    min-height: 65vh;
     background-attachment: fixed; 
     background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-	padding: 0;
+    background-repeat:no-repeat; 
+    background-size:cover; 
+	 padding: 0;
 }
 .GDChero { 
     background-image: url(images/GDC_coop.jpg); 
+    min-width: fit-content;
     min-height: 80vh;
     background-attachment: fixed; 
     background-position: center; 
@@ -21,6 +23,7 @@ body { font-family: Courier New, sans-serif;
  }
 .eaglehero { 
     background-image: url(images/eagle_crop.jpg); 
+    min-width: fit-content;
     min-height: 80vh; 
     background-attachment: fixed; 
     background-position: center; 
@@ -29,6 +32,7 @@ body { font-family: Courier New, sans-serif;
  }
  .varhero { 
     background-image: url(images/variance.jpg); 
+    min-width: fit-content;
     min-height: 80vh; 
     background-attachment: fixed; 
     background-position: center; 
@@ -37,6 +41,7 @@ body { font-family: Courier New, sans-serif;
  }
  .sootlhero { 
     background-image: url(images/sootl_ss.jpg); 
+    min-width: fit-content;
     min-height: 80vh; 
     background-attachment: fixed; 
     background-position: center; 
@@ -45,6 +50,7 @@ body { font-family: Courier New, sans-serif;
  }
  .physhhero { 
     background-image: url(images/physh.jpg); 
+    min-width: fit-content;
     min-height: 80vh; 
     background-attachment: fixed; 
     background-position: center; 
@@ -53,7 +59,8 @@ body { font-family: Courier New, sans-serif;
  }
  .penguinhero { 
     background-image: url(images/penguin_menu.jpg); 
-    min-height: 60vh;  
+    min-width: fit-content;
+    min-height: 80vh;  
     background-attachment: fixed; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -65,21 +72,21 @@ nav {
      position: fixed;
 	  top: 0;
 	  left: 0;
-	  padding: .5em;
+	  padding: .3em;
 	  height: 55px;
+	  text-align: center;
 	  background:rgba(102, 113, 255, .70);
 	  width: 100%;
 	  font-size: 120%;
 	  font-weight: bold;
 	  text-shadow: 3px 3px 3px #000000;
-	  min-width: 1400px;
 }
 
 nav ul { 
    list-style-type: none; 
    margin: 5px; 
 }
-nav ul li { display: inline; padding-left: 2em; padding-right: 2em; }
+nav ul li { display: inline; padding-left: 1em; padding-right: 1em; }
 nav a { text-decoration:none; }
 nav a:link { color: rgb(204, 199, 255); }
 nav a:visited { color: rgb(204, 199, 255); }
@@ -109,16 +116,74 @@ footer {  background:rgba(102, 113, 255, 0.90);
           font-size: 90%;
           text-align: center;	
           color: rgb(204, 199, 255);
-		      position: fixed;
+		    position: fixed;
           bottom: 0;
 }
 footer a {  text-decoration: none; 
             color: rgb(204, 199, 255); 
             }
-@media (max-width: 1400px) {
+@media (max-width: 1373px) {
+   .hero{
+      min-height: 75vh;
+      background-attachment:scroll; 
+   }
+   .GDChero{
+      min-height: 50vh;
+      background-attachment:local; 
+   }
+   .eaglehero{
+      min-height: 60vh;
+      background-attachment:local; 
+   }
+   .varhero{
+      min-height: 60vh;
+      background-attachment:local; 
+   }
+   .sootlhero{
+      min-height: 60vh;
+      background-attachment:local; 
+   }
+   .physhhero{
+      min-height: 60vh;
+      background-attachment:local; 
+   }
+   .penguinhero{
+      min-height: 60vh;
+      background-attachment:local; 
+   }
    nav{
       height: 80px;
-      font-size: 150%;
-      min-width: 1000px;
+      font-size: 120%;
+      min-width: 740px;
+   }
+   h1{
+      font-size: 5em;
+      height: 155px; 
+   }
+}
+@media (max-width: 850px) {
+   .hero{
+      min-height: 65vh;
+   }
+   .GDChero{
+      min-height: 30vh;
+   }
+   .eaglehero{
+      min-height: 45vh;
+   }
+   .varhero{
+      min-height: 30vh;
+   }
+   .sootlhero{
+      min-height: 45vh;
+   }
+   .physhhero{
+      min-height: 30vh;
+   }
+   .penguinhero{
+      min-height: 30vh;
+   }
+   h1{
+      overflow: hidden;
    }
 }
